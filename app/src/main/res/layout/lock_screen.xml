@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:theme="@style/OverlayDialog"
     tools:context="com.rompacme.mallowlocker.LockScreen"
-    style="@style/AppTheme"
+    style="@style/OverlayDialog"
     android:minHeight="200dp"
     android:minWidth="200dp">
 
@@ -34,9 +34,10 @@
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageButton" />
 
-    <DigitalClock
+es...    <DigitalClock
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:id="@+id/digitalClock"
@@ -48,7 +49,11 @@
         android:minHeight="200dp"
         android:minWidth="200dp"
         android:height="200dp"
+        android:textSize="45sp"
         android:gravity="center_vertical|center_horizontal"
-        android:textStyle="bold|normal" />
+        android:linksClickable="false"
+        android:theme="@android:style/Theme.Dialog"
+        android:typeface="normal"
+        android:focusable="false" />
 
 </RelativeLayout>
