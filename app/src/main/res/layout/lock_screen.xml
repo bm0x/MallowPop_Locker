@@ -18,13 +18,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/textalpha"
-        android:layout_marginTop="158dp"
+        android:layout_marginTop="157dp"
         android:focusableInTouchMode="true"
-        android:background="#e1e1e1"
-        android:textColor="#000000"
+        android:background="@android:color/transparent"
+        android:textColor="#fff"
+        android:gravity="center_horizontal"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:gravity="center_horizontal" />
+        android:layout_centerHorizontal="true" />
 
 
     <ImageButton
@@ -37,7 +37,7 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/imageButton" />
 
-es...    <DigitalClock
+    <DigitalClock
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:id="@+id/digitalClock"
