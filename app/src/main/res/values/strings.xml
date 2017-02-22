@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">MallowLocker</string>
-    <string name="textalpha">MallowPop\nLocker</string>
+    <string name="app_name">Chaos Locker</string>
+    <string name="textalpha">Press the screen \nto unlock</string>
 </resources>
