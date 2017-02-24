@@ -6,10 +6,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
-import android.view.MotionEvent;
 
 public class LockScreen extends Activity {
-	
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

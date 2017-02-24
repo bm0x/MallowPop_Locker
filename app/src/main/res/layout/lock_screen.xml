@@ -9,11 +9,11 @@
 	android:paddingRight="@dimen/activity_horizontal_margin"
 	android:paddingTop="@dimen/activity_vertical_margin"
 	android:theme="@style/OverlayDialog"
-	android:onClick="unlockScreen"
 	tools:context="com.rompacme.mallowlocker.LockScreen"
 	style="@style/OverlayDialog"
 	android:minHeight="200dp"
-	android:minWidth="200dp">
+	android:minWidth="200dp"
+    android:onClick="unlockScreen">
 
 	<DigitalClock
 		android:layout_width="fill_parent"
@@ -27,11 +27,8 @@
 		android:height="200dp"
 		android:textSize="50sp"
 		android:gravity="center_vertical|center_horizontal"
-		android:linksClickable="false"
-		android:theme="@android:style/Theme.Dialog"
 		android:typeface="normal"
 		android:focusable="false"
-		android:elevation="100dp"
 		android:layout_marginTop="0dp"/>
 
 	<TextView
@@ -42,6 +39,57 @@
 		android:layout_alignParentBottom="true"
 		android:gravity="center_vertical|center_horizontal"
 		android:id="@+id/unlocktext"/>
+
+    <TabHost
+        android:layout_width="200dip"
+        android:layout_height="300dip"
+        android:layout_marginBottom="32dp"
+        android:layout_above="@+id/unlocktext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/digitalClock">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
 
 </RelativeLayout>
 
